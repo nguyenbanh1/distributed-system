@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloworld-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helloworld-2
+  template:
+    metadata:
+      name: helloworld-2
+      labels:
+        app: helloworld-2
+    spec:
+      containers:
+      - image: 17051998/nguyenbanh123456789-jvm
+        name: quarkus
+        ports:
+          - name: helloworld-2
+            containerPort: 8089
+            protocol: TCP
+        imagePullPolicy: Always

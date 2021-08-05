@@ -1,0 +1,25 @@
+version: "3"
+services:
+  redis1:
+    image: bitnami/redis:latest
+    ports:
+      - "127.0.0.1:6380:6379"
+    restart: on-failure
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+
+  redis2:
+    image: bitnami/redis:latest
+    ports:
+      - "127.0.0.1:6381:6379"
+    restart: on-failure
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+
+  redis3:
+    image: bitnami/redis:latest
+    ports:
+      - "127.0.0.1:6382:6379"
+    restart: on-failure
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes

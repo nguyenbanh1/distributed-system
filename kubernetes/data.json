@@ -1,0 +1,27 @@
+curl --location --request POST 'localhost:8081/quiz/' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImRINTFKVXh5cFNCOGdpbUNIaGhQeWl6YVc5WGgybGs4aVJDcXN1YUFPTDgifQ.eyJpc3MiOiJodHRwczovL3phbW9iMmMuYjJjbG9naW4uY29tL2Y5ODcyYWMzLTgxYzctNGRmNi1hYzg5LTU2OTc5MDFlY2IxMC92Mi4wLyIsImV4cCI6MTYwNjYyNDQ1MiwibmJmIjoxNjA2NDUxNjUyLCJhdWQiOiIwNWMyMTQ0MC00NTA0LTRmMDEtYmZlMC0zNzAyMzI2MTVmNmIiLCJzdWIiOiI3ODI2MjYzMC0zZjFhLTQ4ZDktOGM4ZC01NmRiNDlhMDliODQiLCJwbWlxX3RlbmFudF9pZCI6InNvZnRlY2giLCJ1c2VyTmFtZSI6Imh1eWVuLnRyYW4rNUB6YW1vLmlvIiwibmFtZSI6Imh1eWVuLnRyYW4rNUB6YW1vLmlvIiwiY3JlYXRpb25UeXBlIjoiTmFtZUNvZXhpc3RlbmNlIiwicG1pcV91c2VyX3ZhbGlkIjp0cnVlLCJ0aWQiOiJmOTg3MmFjMy04MWM3LTRkZjYtYWM4OS01Njk3OTAxZWNiMTAiLCJhenAiOiIwNWMyMTQ0MC00NTA0LTRmMDEtYmZlMC0zNzAyMzI2MTVmNmIiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2MDY0NTE2NTJ9.eoNs9EqZTlVyuzpWGNALrvvblPvgv_eKoJN76IcYR2ORaLqo8UxnHE01mbXNT0r3V8j695HnQdrPSqKeod3Fsq-LWK2PWpuTDVo60XW-siMGZHLQ4ARDrLMnT4kzobNKiocWd0ucziBborI1yLqHQlQmk1NSH_NzCpogLUzGemsH7awnRaNZi5Rb0rTgrC5t5qlEHadEz6oJs-5EUlMRvRH5Hqq_EUbEXGIrGFVGOco3m2emPTp1y2AYbOHPWWLpgYWCiMJppB-moG4lwSONv_dFHqANg9_iaqvcXv3uSTF0bqzZLnceDRdDOHp2cK5FmfJ_DMkcTqi_RSBjjpaZcQ' \
+--header 'X-PMIQ-Auth-User: eyJ0ZW5hbnRJZCI6InNvZnRlY2giLCJ0ZW5hbnRTc28iOmZhbHNlLCJ1c2VySWQiOjEwMjAsInVzZXJOYW1lIjoiZGV2bG9jYWxAemFtb2IyYy5jb20iLCJlbWFpbCI6InRoYW5oLm5oYW0rY29hY2guQHphbW8uaW8iLCJkaXNwbGF5TmFtZSI6IkRldiBMb2NhbCIsInNzbyI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSIsImZpcnN0TmFtZSI6InRoYW5oIiwibGFzdE5hbWUiOiJuaGFtIiwidGl0bGUiOiJFbmdpbmVlciBNYW5hZ2VyIiwiYXZhdGFyIjoiaHR0cHM6Ly93d3cuZmxhdGljb24uY29tL3ByZW1pdW0taWNvbi9pY29ucy9zdmcvMjg5NC8yODk0Nzk1LnN2ZyIsInJvbGVzIjpbIk1BTkFHRVIiXSwiYXNzaWduZWRSb2xlIjoiTUFOQUdFUiJ9' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "playbookId": "2203edb4-3e9e-11eb-a368-0242ac120002",
+  "versionCode": "2203edb4-3e9e-11eb-a368-0242ac120002",
+  "quizId": "cb5e6d3e-32d3-11eb-adc1-0242ac120006",
+  "answers": [
+    {
+      "questionId": "1012",
+      "answer": "1048"
+    },
+    {
+      "questionId": "1013",
+      "answer": "1052"
+    },
+    {
+      "questionId": "1014",
+      "answer": "1056"
+    },
+    {
+      "questionId": "1015",
+      "answer": "go"
+    }
+  ]
+}'

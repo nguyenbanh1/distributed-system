@@ -1,0 +1,8 @@
+
+customer:
+  datasource:
+    host: localhost
+    port: 5432
+    database: propzy
+    username: user
+    password: password
